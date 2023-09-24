@@ -25,7 +25,23 @@ $livroC = new Livro(
     "https://www.amazon.com.br/Vil%C3%A3-Romance-Entre-Mundos-Vol-1/dp/6551230326?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A1ZZFT5FULY4LN"
 );
 
-$livros = [$livroA, $livroB, $livroC];
+$livroD = new Livro(
+    "Fica entre nós",
+    "Sophie Gonzales",
+    "https://m.media-amazon.com/images/I/81Mh6glGpqL._SY425_.jpg",
+    416,
+    "https://www.amazon.com.br/Fica-entre-n%C3%B3s-Sophie-Gonzales/dp/8555342031/ref=asc_df_8555342031/?tag=googleshopp00-20&linkCode=df0&hvadid=379799549714&hvpos=&hvnetw=g&hvrand=17494258563512609653&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001773&hvtargid=pla-1678833533508&psc=1"
+);
+$livroE = new Livro(
+    "Não nasci para agradar",
+    "Michelle Quach",
+    "https://m.media-amazon.com/images/I/41qVfU9MbgL._SY445_SX342_.jpg",
+    400,
+    "https://www.amazon.com.br/Nasci-Para-Agradar-Michelle-Quach/dp/6555604883/ref=asc_df_6555604883/?tag=googleshopp00-20&linkCode=df0&hvadid=379707157135&hvpos=&hvnetw=g&hvrand=17494258563512609653&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001773&hvtargid=pla-1641079939387&psc=1"
+);
+
+
+$livros = [$livroA, $livroB, $livroC, $livroD, $livroE];
 
 ?>
 <!doctype html>
