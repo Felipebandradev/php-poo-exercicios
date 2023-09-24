@@ -10,7 +10,7 @@ $livroA = new Livro(
 );
 
 $livroB = new Livro(
-    "O Destino dos Vilões é a Morte", 
+    "O Único Destino dos Vilões é a Morte", 
     "Gwon Gyeoeul",
     "https://m.media-amazon.com/images/I/51QqljA8BnL._SY445_SX342_.jpg", 
     260,
