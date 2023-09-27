@@ -1,6 +1,6 @@
 <?php 
 
-class Livro{
+abstract class Livro{
     private string $titulo;
     private string $autor;
     private string $capa;
