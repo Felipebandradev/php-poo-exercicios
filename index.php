@@ -1,9 +1,12 @@
 <?php
-require_once "src/Livro.php";
-require_once "src/Tecnico.php";
-require_once "src/Programacao.php";
-require_once "src/Didatico.php";
 
+
+
+
+// Chamando a Subclasse Tecnico
+
+require_once "src/Tecnico.php";
+// criando o objeto/instancia Técnico
 $livroA = new Tecnico(
   "Level UP: um Guia Para o Design de Grandes Jogos",
   " Scott Rogers",
@@ -12,8 +15,22 @@ $livroA = new Tecnico(
   "https://www.amazon.com.br/Level-UP-Design-Grandes-Jogos/dp/852120700X/ref=asc_df_852120700X/?tag=googleshopp00-20&linkCode=df0&hvadid=379805025824&hvpos=&hvnetw=g&hvrand=4128897392492826558&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001773&hvtargid=pla-423142399401&psc=1"
 );
 
+/* 
+Chamando o Formato usando o Implode
 
+$livroA->setFormato(["Digital"]);
 
+Para Exibir usando o metodo implode (Fezendo a Saída de Dados)
+
+<?=$livroA->getFormato()?>
+
+*/
+
+// chamando a Subclasse Didatico
+
+require_once "src/Didatico.php";
+
+// criando o objeto/instância Didatico
 $livroB = new Didatico(
   "Design thinking: uma metodologia poderosa para decretar o fim das velhas ideias",
   "Tim Brown",
@@ -24,6 +41,11 @@ $livroB = new Didatico(
 
 $livroB->setDisciplina("UI(interface e usabilidade)");
 
+// Chamando a Subclasse Programacao
+
+require_once "src/Programacao.php";
+
+// Criando o objeto/instancia Programacao
 
 $livroC = new Programacao(
   "Liberdade digital: O mais completo manual para empreender na internet e ter resultados",
@@ -53,6 +75,8 @@ $livroC->setArea("Front-end");
 
   <section class="caixa">
 
+    <!-- Exibindo o Objeto/Instância Tecnico -->
+
     <div class="cartao">
       <h2>Tecnico</h2>
       <figure>
@@ -69,6 +93,8 @@ $livroC->setArea("Front-end");
         </ul>
       </div>
     </div>
+
+    <!-- Exibindo Objeto/Instancia Ditatico -->
 
     <div class="cartao">
       <h2>Didatico</h2>
@@ -88,6 +114,8 @@ $livroC->setArea("Front-end");
         </ul>
       </div>
     </div>
+
+    <!-- Exibindo o Objeto/Instancia Programacao -->
 
     <div class="cartao">
       <h2>Programação</h2>

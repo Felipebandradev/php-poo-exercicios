@@ -5,7 +5,7 @@ require_once "Tecnico.php";
 final class Didatico extends Tecnico{
 
     private string $disciplina;
-    private array $nivel = ["basico","medio","superior"];
+    private array $nivel = ["Básico","Médio","Superior"];
 
     
 
